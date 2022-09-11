@@ -40,7 +40,7 @@ public class ConferenceService extends MicroService {
 
     private void updateTick(){
         numOfTicks++;
-        if(numOfTicks==date){ //?numOfTicks*tickTime==date
+        if(numOfTicks==date){ 
             sendBroadcast(new PublishConferenceBroadcast(conferenceInformation.getModels()));
             terminate();
         }
