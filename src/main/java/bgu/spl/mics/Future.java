@@ -32,7 +32,6 @@ public class Future<T> {
 	 * @post: @return == result
 	 */
 	public T get(){
-		//TODO: implement this.
 		synchronized (this){ //after we checked !isResolved before we get to wait no one can resolve it and get us deadlock
 			while(!isResolved){
 				try{
