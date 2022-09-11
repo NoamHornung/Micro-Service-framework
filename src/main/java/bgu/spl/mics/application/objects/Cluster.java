@@ -129,7 +129,5 @@ public class Cluster {
 		findGPU= new ConcurrentHashMap<>();
 		processed= new ConcurrentHashMap<>();
 		unprocessed= new LinkedBlockingQueue<>();
-		//CPUS.clear();
-		//GPUS.clear();
 	}
 }
