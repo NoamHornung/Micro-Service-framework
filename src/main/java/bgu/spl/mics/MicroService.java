@@ -92,7 +92,7 @@ public abstract class MicroService implements Runnable {
 
     /**
      * Sends the event {@code e} using the message-bus and receive a {@link Future<T>}
-     * object that may be resolved to hold a result. This method must be Non-Blocking since //TODO
+     * object that may be resolved to hold a result. This method must be Non-Blocking since
      * there may be events which do not require any response and resolving.
      * <p>
      * @param <T>       The type of the expected result of the request
@@ -152,8 +152,7 @@ public abstract class MicroService implements Runnable {
     }
 
     /**
-     * The entry point of the micro-service. TODO: you must complete this code
-     * otherwise you will end up in an infinite loop.
+     * The entry point of the micro-service. 
      */
     @Override
     public final void run() {
