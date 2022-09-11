@@ -60,7 +60,7 @@ public class GPUService extends MicroService {
                 currEvent= c;
             }
             else{
-                //TODO: sort by size of data
+                // sort by size of data
                 int i = 0;
                 int size = c.getModel().getData().getSize();
                 for(Event<Model> m : eventsInLine){
@@ -71,7 +71,6 @@ public class GPUService extends MicroService {
                     }
                 }
                 eventsInLine.add(i, c); //saves the event for when it finishes training this model*/
-                //eventsInLine.add(c);
             }
         });
 
